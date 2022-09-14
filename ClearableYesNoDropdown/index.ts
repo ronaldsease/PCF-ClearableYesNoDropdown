@@ -1,7 +1,8 @@
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
 import * as React from "react";
-
+import { initializeIcons } from "@fluentui/react";
+initializeIcons();
 export class ClearableYesNoDropdown implements ComponentFramework.ReactControl<IInputs, IOutputs> {
     private theComponent: ComponentFramework.ReactControl<IInputs, IOutputs>;
     private notifyOutputChanged: () => void;
@@ -32,7 +33,7 @@ export class ClearableYesNoDropdown implements ComponentFramework.ReactControl<I
      * @returns ReactElement root react element for the control
      */
     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
-        const props: IHelloWorldProps = { name: 'Hello, World!' };
+        const props: IHelloWorldProps = { context : context};
         return React.createElement(
             HelloWorld, props
         );
