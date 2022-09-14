@@ -12,3 +12,8 @@
 # msbuild output directories
 /bin
 /obj
+.vs/slnx.sqlite
+.gitignore
+.vs/PCF-ClearableYesNoDropdown/FileContentIndex/read.lock
+.vs/PCF-ClearableYesNoDropdown/FileContentIndex/7c26c273-81bb-4f21-8f5d-488c50d3a51a.vsidx
+/.vs/PCF-ClearableYesNoDropdown/FileContentIndex
